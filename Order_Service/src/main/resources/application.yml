@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: order-service
+
+  feign:
+    client:
+      config:
+        default:
+          connectTimeout: 5000
+          readTimeout: 5000
+    httpclient:
+      enabled: true
+    okhttp:
+      enabled: false
+
+  cloud:
+    feign:
+      logging:
+        level: FULL

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: feign-client-config
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 10000
+        loggerLevel: FULL
+        retryer: default
+        decode404: true
